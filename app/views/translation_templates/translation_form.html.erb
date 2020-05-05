@@ -1,0 +1,31 @@
+<h1>New translation</h1>
+
+<form action="/wizard_translate">
+  <div>
+    <label for="body_box">Say what?</label><br>
+
+    <textarea name="message_body" id="body_box"></textarea>
+  </div>
+
+  <div>
+    <label for="language_box">In which language?</label><br>
+
+    <select id="language_box" name="language_selection">
+      <% @language_list.each do |language_object| %>
+        <option value="<%= language_object.code %>">
+          <%= language_object.name %>
+        </option>
+      <% end %>
+    </select>
+  </div>
+
+  <div>
+    <label for="phone">Do you want to text the translation to someone? (Not required.)</label><br>
+
+    <input id="phone" name="telephone" type="text" placeholder="Format: +19876543210">
+  </div>
+
+  <div>
+    <button>Translate!</button>
+  </div>
+</form>
