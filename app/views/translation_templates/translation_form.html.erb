@@ -1,0 +1,50 @@
+<h1>New translation</h1>
+
+<form action="/wizard_translate">
+  <div>
+    <label for="body_box">Say what?</label><br>
+    <textarea name="message_body" id="body_box"></textarea>
+  </div>
+
+  <div>
+    <label for="language_box">In which language?</label></br>
+    <select id="language_box" name="language_selection">
+      <% @language_list.each do |language_object| %>
+        <% if language_object.code == "hi" %>
+          <option value="<%= language_object.code %>" selected>
+            <%= language_object.name %>
+          </option>
+        <% else %>
+          <option value="<%= language_object.code %>">
+            <%= language_object.name %>
+          </option>
+        <% end %>
+      <% end %>
+    </select>
+  </div>
+
+  <div>
+    <label for="phone">Do you want to text the translation to someone? (Not required.) </label></br>
+    <input id="phone" name="telephone" type="text" placeholder="Format: +19876543210"></br>
+  </div>
+
+  <button>Translate</button>
+</form>
+
+<% if cookies.fetch(:translation_result) != nil %>
+  <p>
+    Previous translation:
+  </p>
+
+  <blockquote>
+    <%= cookies.fetch(:translation_body) %>
+  </blockquote>
+
+  <p>
+    in <em><%= cookies.fetch(:translation_lang) %></em> translates to:
+  </p>
+
+  <blockquote>
+    <%= cookies.fetch(:translation_result) %>
+  </blockquote>
+<% end %>

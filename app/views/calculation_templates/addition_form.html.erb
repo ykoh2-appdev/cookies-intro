@@ -1,0 +1,18 @@
+<h1>New addition</h1>
+
+<form action="/wizard_add">
+  <label for="first_field">Add this:</label>
+  <input type="text" id="first_field" name="first_num">
+
+  <label for="second_field">to this:</label>
+  <input type="text" id="second_field" name="second_num">
+
+  <button>Add!</button>
+</form>
+
+<% if cookies.fetch(:addition_result) != nil %>
+  <p>
+    Previous addition: 
+    <%= cookies.fetch(:addition_first) %> + <%= cookies.fetch(:addition_second) %> = <%= cookies.fetch(:addition_result) %>
+  </p>
+<% end %>

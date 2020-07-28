@@ -5,6 +5,9 @@ ruby '2.6.6'
 
 gem 'rails', '~> 6.0.3.2'
 
+gem 'google-cloud-translate', '2.3.0'
+gem 'twilio-ruby'
+
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 

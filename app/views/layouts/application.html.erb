@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FormIntro</title>
+    <title>Target Cookies Intro</title>
     <%= csrf_meta_tags %>
 
     <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
@@ -15,6 +15,30 @@
   </head>
 
   <body>
+    <table style="width: 100%" border="1">
+      <tr>
+        <td>
+          <a href="/muggle_add">Add</a>
+        </td>
+
+        <td>
+          <a href="/muggle_subtract">Subtract</a>
+        </td>
+
+        <td>
+          <a href="/muggle_multiply">Multiply</a>
+        </td>
+
+        <td>
+          <a href="/muggle_divide">Divide</a>
+        </td>
+
+        <td>
+          <a href="/muggle_translate">Translate</a>
+        </td>
+      </tr>
+    </table>
+
     <%= yield %>
   </body>
 </html>
