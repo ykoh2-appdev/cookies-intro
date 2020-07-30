@@ -4,17 +4,19 @@
 
 This project is a companion to [this Chapter, which contains detailed notes](https://chapters.firstdraft.com/chapters/842).
 
-## Google Cloud Translate
+---
+
+If you're curious to learn more about the Google Translate API, read on. But this assignment has nothing to do with the below; just follow the Chapter linked above.
+
+### Google Cloud Translate
 
  - [Google Cloud Translation](https://cloud.google.com/translate)
 
-Here's the crux of using the official gem:
-
-Add the gem to your Gemfile:
+If you want to use Google's Ruby gem in one of your own projects, then add the gem to your Gemfile:
 
 ```ruby
 # /Gemfile
-gem "google-cloud-translate"
+gem "google-cloud-translate", "2.3.0"
 ```
 
 Then `bundle install` and restart your web server.
