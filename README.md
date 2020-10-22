@@ -6,6 +6,8 @@ This project is a companion to [this Chapter, which contains detailed notes](htt
 
 ---
 
+[Target](https://cookies-intro.matchthetarget.com/)
+
 If you're curious to learn more about the Google Translate API, read on. But this assignment has nothing to do with the below; just follow the Chapter linked above.
 
 ### Google Cloud Translate
