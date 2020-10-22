@@ -49,6 +49,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'draft_generators', github: 'firstdraft/draft_generators', branch: 'winter-2020'
+  gem "rails_db", "2.3.1"
 end
 
 group :test do

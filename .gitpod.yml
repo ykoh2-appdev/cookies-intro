@@ -1,4 +1,4 @@
-image: jelaniwoods/appdev2020-form-intro:summer
+image: jelaniwoods/appdev2020-cookies-intro:fall
 
 tasks:
   - init: bin/setup
