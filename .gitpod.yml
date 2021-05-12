@@ -1,4 +1,4 @@
-image: jelaniwoods/appdev2021-cookies-intro
+image: jelaniwoods/appdev2021-cookies-intro@sha256:f9b9adc513a7d02d0722fcb58e485b94ceb68fa86ad50aec92f8667f08d74e20
 
 tasks:
   - init: bin/setup
