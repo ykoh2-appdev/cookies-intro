@@ -1,4 +1,4 @@
-image: jelaniwoods/appdev2021-cookies-intro@sha256:f9b9adc513a7d02d0722fcb58e485b94ceb68fa86ad50aec92f8667f08d74e20
+image: jelaniwoods/appdev2021-cookies-intro@sha256:sha256:673e131af9a21efe7962ed8e770836b4c987d8c2a2d0721fceced51203feb75b
 
 tasks:
   - command: bundle install
