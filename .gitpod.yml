@@ -1,14 +1,16 @@
-image: jelaniwoods/appdev2021-cookies-intro@sha256:673e131af9a21efe7962ed8e770836b4c987d8c2a2d0721fceced51203feb75b
+image: patrickmckernin/cookies-intro-2022-winter
 
 tasks:
-  - command: bundle install
   - init: bin/setup
 ports:
   - port: 3000
     onOpen: open-preview
-    visibility: public
+  - port: 9515
+    onOpen: ignore
+
 
 vscode:
   extensions:
-    - shd101wyy.markdown-preview-enhanced
-    - wingrunr21.vscode-ruby
+    - vortizhe.simple-ruby-erb
+    - mbessey.vscode-rufo
+    - aliariff.vscode-erb-beautify

@@ -50,6 +50,8 @@ group :development do
   gem 'binding_of_caller'
   gem 'draft_generators', github: 'firstdraft/draft_generators', branch: 'winter-2020'
   gem "rails_db", "2.3.1"
+  gem 'rufo'
+  gem 'htmlbeautifier'
 end
 
 group :test do
