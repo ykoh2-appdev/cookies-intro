@@ -9,3 +9,12 @@
 
   <button>Add!</button>
 </form>
+
+<p>
+Previous addition: 
+<%= cookies.fetch(:addition_first) %> 
++ 
+<%= cookies.fetch(:addition_second) %> 
+= 
+<%= cookies.fetch(:addition_results) %>
+</p>

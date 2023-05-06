@@ -21,6 +21,10 @@ class CalculationsController < ApplicationController
 
     @result = @first_number.to_f + @second_number.to_f
 
+    cookies.store(:addition_first, @first_number)
+    cookies.store(:addition_second, @second_number)
+    cookies.store(:addition_results, @result)
+
     render({ :template => "calculation_templates/add_results.html.erb" })
   end
 
